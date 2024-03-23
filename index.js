@@ -59,7 +59,7 @@ bot.on(Events.InteractionCreate, async interaction => {
 bot.on('messageCreate', async (message) => {
     console.log(`new message on ${message.guild.id}`)
 	if (Math.random() <= 0.1) {
-        const results =  await google.search("Nos chers voisins", {page: 1});
+        const results =  await google.search("TheFantasio974", {page: 1});
 		const length = results.length;
 		const rep = results[Math.floor(Math.random() * length)];
 		message.reply(rep.url);

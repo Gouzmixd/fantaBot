@@ -11,7 +11,7 @@ module.exports = {
             await interaction.reply('g parti <:fantatete128:1128788526683656232>');
         }
         else {
-			await interaction.reply('gros con <:fantatete128:1128788526683656232>');
+			await interaction.reply('gros beta <:fantatete128:1128788526683656232>');
 		}
 	},
 };

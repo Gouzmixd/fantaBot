@@ -29,7 +29,7 @@ module.exports = {
 		  }
 		  catch (e) {
 			console.error(e);
-			interaction.reply("Faut mettre un input gros con <:fantatete128:1128788526683656232>");
+			interaction.reply("Faut mettre un input gros beta <:fantatete128:1128788526683656232>");
 		  }
 	},
 }

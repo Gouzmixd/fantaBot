@@ -1,0 +1,5 @@
+config.json
+node_modules
+.env
+./commands/randomfanta/config.json
+./commands/search/config.json
