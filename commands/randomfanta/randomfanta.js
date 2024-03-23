@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('discord.js');
 const GoogleImage = require('image-search-google');
-const {cse, API_KEY} = require('./config.json');
+const {cse, API_KEY} = require('.../config.json');
 const google = new GoogleImage(cse, API_KEY);
 
 module.exports = {
