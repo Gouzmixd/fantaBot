@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('discord.js');
 const GoogleImage = require('image-search-google');
-const {cse, API_KEY} = require('.../config.json');
+const {cse, API_KEY} = require('../../config.json');
 const google = new GoogleImage(cse, API_KEY);
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
 		.setDescription('Un fanta (ou bob) aléatoire arrive !'),
 	async execute(interaction) {
 		try {
-			const results = await google.search("TheFantasio974", {page: Math.floor(Math.random() * 10) + 1});
+			const results = await google.search("TheFantasio974", {page: 1});
 			const length = results.length;
 			const rep = results[Math.floor(Math.random() * length)];
 			const embed = new EmbedBuilder()
